@@ -209,12 +209,12 @@ address {
 
 /*=====COMPANY=======*/
 
-.company {
+.section {
     padding-top: 96px;
     padding-bottom: 96px;
 }
 
-.company-container {}
+/*.company-container {}
 
 .visually-hidden {
     position: absolute;
@@ -233,37 +233,21 @@ address {
 
 .company-list {
     flex-wrap: wrap;
-    
     display: flex;
     gap: 72px;
-    /*gap: 24px;*/
 }
 
 .company-item {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    /*width: calc((100% - 3 * 24px) / 4);*/
 }
 
 .container-item-icon {
     display: none;
-    /*display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    margin-bottom: 8px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-radius: 4px;
-    border: 1px solid #8E8F99;
-    background: #F4F4FD;*/
 }
 
-.company-item-icon {
-    /*display: block;
-    margin: 0 auto;*/
-}
+.company-item-icon {}
 
 .company-item-subtitle {
     text-align: center;
@@ -271,26 +255,19 @@ address {
     font-weight: 700;
     line-height: 1.11;
     text-transform: capitalize;
-
     color: #2E2F42;
     letter-spacing: 0.02em;
-    /*margin-bottom: 8px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;*/
 }
 
 .company-item-text {
     font-weight: 500;
-    
     color: #434455;
-    /*font-weight: 400;*/
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-/*=======================*/
+=======================*/
 
-/*=====TEAM=====
+/*=====TEAM=====*/
 .team {
     background-color: #F4F4FD;
 }
@@ -309,12 +286,12 @@ address {
 }
 
 .team-list {
+    flex-wrap: wrap;
     display: flex;
-    gap: 24px;
 }
 
 .team-item {
-    width: calc((100% - 72px) / 4);
+    margin: 0 auto;
     background-color: #FFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -893,7 +870,18 @@ color: #FFF;
     .company-item-subtitle {
         text-align: left;
     }
+
+    .team-list {
+        padding: 0 92px;
+        gap: 64px 24px;
+    }
+
+    .team-item {
+        width: calc((100% 24px) / 2);
+    }
 }
+
+/*==============1158====================*/
 
 @media screen and (min-width: 1158px) {
     .container {
@@ -940,6 +928,16 @@ color: #FFF;
 
     .company-item-text {
         font-weight: 400;
+    }
+
+    .team-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+        padding: 0;
+    }
+
+    .team-item {
+        width: calc((100% - 3 * 24px) / 4);
     }
 }
 
