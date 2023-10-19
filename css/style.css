@@ -26,6 +26,7 @@ ul {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 address {
@@ -40,7 +41,7 @@ address {
     outline: 1px solid red;
 }
 
-/*----- HEADER -----*/
+/*----- HEADER -----
 .header {
     border-bottom: 1px solid #E7E9FC;
     background: #FFF;
@@ -145,24 +146,31 @@ address {
 .header-address-link:active {
     color: #404bbf;
 }
-=================*/
+/*=================*/
 
-/*======MAIN=====
+/*======MAIN=====*/
 .main-page {
     background-color: #ffffff;
 }
 
-/*=====CONTENT======
+/*=====CONTENT======*/
 .content {
     background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1440px;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding: 72px 0;
     margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .content {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-mob-2x.jpg);
+    }
 }
 
 .content-container {}
@@ -170,15 +178,17 @@ address {
 .title-top {
     color: #FFF;
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     width: 100%;
-    max-width: 496px;
+    min-width: 288px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
+    padding: 0 60px 0 60px;
 }
 
 .content-btn {
@@ -205,7 +215,7 @@ address {
 .content-btn:active {
     background-color: #404BBF;
 }
-=====================*/
+/*=====================*/
 
 /*=====COMPANY=======*/
 
@@ -861,6 +871,28 @@ address {
 /*============768=========*/
 
 @media screen and (min-width: 768px) {
+    .content {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-tab.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .content {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-tab-2x.jpg);
+        }
+    }
+
+    .title-top {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin-bottom: 36px;
+        padding: 0;
+    }
+    
     .container {
         max-width: 768px;
     }
@@ -938,6 +970,24 @@ address {
 /*==============1158====================*/
 
 @media screen and (min-width: 1158px) {
+    .content {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .content {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-2x.jpg);
+        }
+    }
+
+    .title-top {
+        margin-bottom: 48px;
+    }
+    
     .container {
         max-width: 1158px;
         padding: 0 15px;
