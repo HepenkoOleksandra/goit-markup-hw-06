@@ -278,11 +278,11 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     width: 100%;
-    min-width: 288px;
+    max-width: 220px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
-    padding: 0 60px 0 60px;
+    /*padding: 0 60px 0 60px;*/
 }
 
 .content-btn {
@@ -605,8 +605,8 @@ address {
     display: flex;
     padding: 0;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    /*justify-content: flex-start;
+    align-items: flex-start;*/
     gap: 16px;
 }
 
@@ -616,7 +616,8 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin: 0 auto;
+    text-align: center;
+    /*margin: 0 auto;*/
 }
 
 .footer-soc-list {
@@ -659,8 +660,8 @@ address {
     display: flex;
     padding: 0;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    /*justify-content: flex-start;
+    align-items: flex-start;*/
     gap: 16px;
 }
 
@@ -670,7 +671,8 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    text-align: center;
 }
 
 .footer-form {
@@ -759,7 +761,7 @@ address {
 .modal {
     width: 288px;
     min-height: 623px;
-    padding: 72px 24px 24px;
+    padding: 72px 16px 16px;
     border-radius: 4px;
     background-color: #FCFCFC;
     position: absolute;
@@ -898,7 +900,15 @@ address {
     margin-bottom: 24px;
 }
 
+
+
 .check-text {
+    display: inline-flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.check-text-mob {
     color: #8E8F99;
     font-size: 12px;
     font-weight: 400;
@@ -1078,7 +1088,6 @@ address {
         line-height: 1.07;
         max-width: 496px;
         margin-bottom: 36px;
-        padding: 0;
     }
     
     .container {
@@ -1139,7 +1148,7 @@ address {
     }
 
     .footer-soc-text {
-        margin: 0;
+        text-align: left;
     }
 
     .footer-form-input {
@@ -1147,7 +1156,7 @@ address {
     }
 
     .form-text {
-       margin: 0; 
+       text-align: left; 
     }
 
     .footer-form {
